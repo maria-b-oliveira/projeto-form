@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+
+.container{
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #eee;
+    width: 400px;
+    max-width: 100%;
+}
+
+.header{
+    padding: 20px;
+}
+
+.form{
+    padding: 20px;
+}
+
+.controle-form{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.controle-form label{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.controle-form input{
+    border: 2px solid #ffff;
+    display: block;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.controle-form small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button{
+    background-color: #FFB6C1;
+    border: 2px solid #FFB6C1;
+    color: #ffff;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.controle-form.sucess input{
+    border-color: #90EE90;
+}
+
+.controle-form.error input{
+    border-color: #FF6347;
+}
+
+.controle-form.error small{
+    visibility: visible;
+    color: #FF6347;
+}
